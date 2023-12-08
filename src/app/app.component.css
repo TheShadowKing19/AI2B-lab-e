@@ -1,0 +1,52 @@
+#header-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#hans {
+  margin: 10px;
+  border: 1px solid black;
+}
+
+#main {
+  position: relative;
+  min-height: 99vh;
+}
+
+.router-outlet {
+  padding-bottom: 4rem;
+}
+
+#footer {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  bottom: 0;
+  width: 100%;
+  height: 2rem;
+  background-color: #6969B3;
+  border-radius: 10px;
+  padding-left: 5px;
+  justify-content: center;
+  align-content: center;
+  color: whitesmoke;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  gap: 5px;
+}
+
+.btn {
+  padding: 10px;
+  border: 1px solid black;
+  background: rgba(46, 188, 220, 0.93);
+  border-radius: 10px;
+}
