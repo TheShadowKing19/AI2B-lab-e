@@ -1,14 +1,17 @@
 <div class="container">
   <h2>Archive</h2>
   <div class="tasks">
-    <div class="task" *ngFor="let task of archive">
-      <div class="title">{{task.title}}</div>
-      <div class="deadline">
+    <mat-card *ngFor="let task of archive">
+      <mat-card-header>
+        <mat-card-header>{{task.title}}</mat-card-header>
+      </mat-card-header>
+      <mat-card-content>
         <span *ngIf="task.deadline">{{task.deadline}}</span>
-      </div>
-      <div class="actions">
-        <button (click)="delete(task)">Delete</button>
-      </div>
-    </div>
+      </mat-card-content>
+      <mat-card-actions align="end">
+        <button mat-raised-button color="warn" (click)="delete(task)">Delete</button>
+      </mat-card-actions>
+    </mat-card>
   </div>
 </div>
+

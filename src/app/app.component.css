@@ -1,14 +1,28 @@
-#header-div {
+#title {
+  text-align: center;
+  font-size: 4rem;
+  color: #6969B3;
+  margin: 0;
+  padding: 0;
+}
+
+.header-div {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
   margin-bottom: 10px;
+  gap: 5px;
+  flex-direction: row;
 }
 
 #hans {
+  display: flex;
+  position: relative;
   margin: 10px;
   border: 1px solid black;
+  height: auto;
+  width: auto;
 }
 
 #main {
@@ -44,9 +58,12 @@
   gap: 5px;
 }
 
-.btn {
-  padding: 10px;
-  border: 1px solid black;
-  background: rgba(46, 188, 220, 0.93);
-  border-radius: 10px;
+.spacer {
+  flex: 1 1 auto;
 }
+.btn {
+  padding: 0 14px;
+  margin: 10px;
+}
+
+

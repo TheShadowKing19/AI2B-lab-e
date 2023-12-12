@@ -3,9 +3,29 @@
     {
       "title": "zadanie",
       "deadline": "2023-12-10",
-      "completed": false,
+      "completed": true,
       "archived": false,
       "id": 4
+    },
+    {
+      "title": "Zadanie wykonane",
+      "completed": true,
+      "archived": true,
+      "id": 5
+    },
+    {
+      "title": "cxcxx",
+      "deadline": "2023-12-12T23:00:00.000Z",
+      "completed": true,
+      "archived": true,
+      "id": 7
+    },
+    {
+      "title": "zadanie do zrobienia",
+      "deadline": "2023-12-12T23:00:00.000Z",
+      "completed": false,
+      "archived": false,
+      "id": 8
     }
   ]
 }

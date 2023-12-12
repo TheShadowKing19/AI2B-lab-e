@@ -1,18 +1,12 @@
 <div id="main">
-  <header class="header">
-    <div class="header-div">
-      <h1>Backend-Based Task ManagerINATOR</h1>
-    </div>
-    <div id="nav">
-    <div class="btn">
-      <a href="/tasks">TODO list</a>
-    </div>
-    <div class="btn">
-      <a href="/archive">Archive</a>
-    </div>
-    </div>
-    <img id="hans" src="https://static.wikia.nocookie.net/phineasandferb/images/5/5d/Doofenshmirtz_Portrait.jpg" alt="Heinz Doofenshmirtz">
-  </header>
+  <mat-toolbar>
+    <span id="title"><h1>Backend-Based Task ManagerINATOR</h1></span>
+    <span class="spacer"></span>
+    <mat-chip-listbox>
+      <mat-chip-option class="btn" routerLink="/tasks" routerLinkActive="active" #rlat="routerLinkActive" [selected]="rlat.isActive">TODO list</mat-chip-option>
+      <mat-chip-option class="btn" routerLink="/archive" routerLinkActive="active" #rlaa="routerLinkActive" [selected]="rlaa.isActive">Archive</mat-chip-option>
+    </mat-chip-listbox>
+  </mat-toolbar>
   <div class="router-outlet">
     <router-outlet></router-outlet>
   </div>

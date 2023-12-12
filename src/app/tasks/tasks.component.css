@@ -4,15 +4,8 @@
   padding: 0 10px;
 }
 
-.tasks .task {
-  background-color: white;
-  border: 1px solid black;
+.tasks mat-card {
   margin-bottom: 10px;
-  padding: 10px;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: 'deadline actions' 'title title';
 }
 
 .completed {
@@ -20,13 +13,11 @@
   opacity: 0.5;
 }
 
-.btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
-  border-radius: 5px;
-  color: white;
-  padding: 5px 10px;
-  cursor: pointer;
+.new-task {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 10px 10px 10px;
 }
 
 @media screen and (min-width: 768px) {
